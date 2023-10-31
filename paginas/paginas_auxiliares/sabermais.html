@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Saber Mais</title>
+
+    <!-- IMPORTANDO BOOTSTRAP & ICONES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" /></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <!-- FIDEO DE FUNDO -->
+    <div id="video-container">
+        <video src="https://github.com/heliocarlitos/portefolio_2/raw/main/videos/background.mp4" autoplay loop muted id="background-video"></video>
+    </div>
+
+    <!-- ABERTURA DO CABEÇALHO -->
+    <header class="header">
+
+        <!-- LOGO E TITULO DO SITE -->
+        <a href="https://heliocarlitos.github.io/portefolio_2/" class="logo_da_header"><img src="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" alt="logo">Último Recurso</a>
+
+        <!-- LOGOTIPO DO MENU (≡) -->
+        <div class="logo_menu" onclick="abrir_fechar_menu ()">
+            <span><i class='bx bx-menu'></i></span>
+        </div>
+        
+        <!-- LINKS DO MEDO E OS BOTÕES LOGIN & CRIAR CONTA -->
+        <nav  id="links_header" class="menu-fechado">
+            <div class="links_header">
+                <!-- LINKS -->
+                <ul>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/">Home</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/sobre.html">Sobre</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/contacto.html">Contacto</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/blog.html" class="link_activo">Blog</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/servicos.html">Serviços</a></li>         
+                </ul>
+
+                <!-- BOTÕES -->
+                <div class="login_header">
+                    <a href="https://heliocarlitos.github.io/portefolio_2/paginas/login.html">Login</a>
+                    <a href="https://heliocarlitos.github.io/portefolio_2/paginas/criarconta.html">Criar conta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FECHAMENTO DO CABEÇALHO -->
+
+    <!-- DIV PARA IR AO TOP -->
+    <div id="top"></div>
+
+    <!-- ABERTURA DA DIV DE SOBRE -->
+        <div class="infosobre_margin_top" onclick="fechar_menu ()">
+            <div class="infosobre">
+               <div class="titulo_saber_mais">
+                <h4>Saber Mais</h4>
+               </div>
+                <!-- DIV DO TEXTO -->
+                <div class="texto_sobre">
+                    <!-- OS TEXOS -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore expedita qui quos, quod, fugit nemo aspernatur facilis enim, ea voluptatum. Exercitationem minima, id repellendus dolorem corporis voluptates pariatur doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore expedita qui quos, quod, fugit nemo aspernatur facilis enim, ea voluptatum. Exercitationem minima, id repellendus dolorem corporis voluptates pariatur doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore expedita qui quos, quod, fugit nemo aspernatur facilis enim, ea voluptatum. Exercitationem minima, id repellendus dolorem corporis voluptates pariatur doloribus.</p>
+                </div>
+
+            </div>
+        </div>
+    <!-- FECHAMENTO DA DIV DE SOBRE -->
+
+    <script src="/javascript/index.js"></script><!-- SCRIPT PARA ABRIR E FECHAR O MENU EM TELAS PEQUENAS -->
+    <script>
+        function abrir_fechar_menu() {
+    var menu = document.getElementById('links_header');
+
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+};
+    </script>
+
+</body>
+</html>

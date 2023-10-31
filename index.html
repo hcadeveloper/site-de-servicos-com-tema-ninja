@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Home</title>
+
+    <!-- IMPORTANDO BOOTSTRAP & ICONES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" /></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- FIDEO DE FUNDO -->
+    <div id="video-container">
+        <video src="https://github.com/heliocarlitos/portefolio_2/raw/main/videos/background.mp4" autoplay loop muted id="background-video"></video>
+    </div>
+
+    <!-- ABERTURA DO CABEÇALHO -->
+    <header class="header">
+
+        <!-- LOGO E TITULO DO SITE -->
+        <a href="https://heliocarlitos.github.io/portefolio_2/" class="logo_da_header"><img src="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" alt="logo">Último Recurso</a>
+
+        <!-- LOGOTIPO DO MENU (≡) -->
+        <div class="logo_menu" onclick="abrir_fechar_menu ()">
+            <span><i class='bx bx-menu'></i></span>
+        </div>
+        
+        <!-- LINKS DO MEDO E OS BOTÕES LOGIN & CRIAR CONTA -->
+        <nav  id="links_header" class="menu-fechado">
+            <div class="links_header">
+                <!-- LINKS -->
+                <ul>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/" class="link_activo">Home</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
+                    <li><a href="paginas/blog.html">Blog</a></li>
+                    <li><a href="paginas/servicos.html">Serviços</a></li>        
+                </ul>
+
+                <!-- BOTÕES -->
+                <div class="login_header">
+                    <a href="paginas/login.html">Login</a>
+                    <a href="paginas/criarconta.html">Criar conta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FECHAMENTO DO CABEÇALHO -->
+    
+    <!-- ABERTURA DO CONTEÚDO DO BODY ABAIXO DO CABEÇALHO-->
+    <div class="body_content" onclick="fechar_menu ()">
+        <div class="content">
+            <div class="informacoes">
+
+                <!-- TEXO -->
+                <p>
+                    Lorem ipsum dolor sit, amet <span class="palavras_destacadas">consectetur</span> adipisicing elit. Inventore rem ab dolore aspernatur corporis, quas sint <span class="palavras_destacadas"> laborum quis</span> laudantium vel doloremque tempore consequuntur odio cupiditate modi iste. <span class="palavras_destacadas">Laudantium</span>, ad!
+                </p>
+
+                <!-- BOTÃO DE SABER MAIS -->
+                <div class="buttonh">
+                    <a href="paginas/paginas_auxiliares/sabermais.html">Saber Mais</a>
+                </div>
+
+                <!-- DIV DO INPUT PARA ADICIONAR EMAIL E SE INSCREVER -->
+                <form class="btn_subscrever">
+                    <div class="iareadoinput">
+
+                        <!-- INPUT DE EMAIL -->
+                        <input type="email" placeholder="seuemail@gmail.com" autocapitalize="off">
+
+                        <!-- BOTÃO DE SE INSCREVER -->
+                        <button>Se Inscrever</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- FECHAMENTO DO CONTEÚDO DO BODY ABAIXO DO CABEÇALHO-->
+
+
+
+    <script src="javascript/index.js"></script><!-- SCRIPT PARA ABRIR E FECHAR O MENU EM TELAS PEQUENAS -->
+    
+    <script>
+        function abrir_fechar_menu() {
+    var menu = document.getElementById('links_header');
+
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+};
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portifólio</title>
+
+    <!-- IMPORTANDO BOOTSTRAP & ICONES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" /></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- IMPORTANDO ESTILIOS CSS PARA ESTA PÁGINA -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <!-- FIDEO DE FUNDO -->
+    <div id="video-container">
+        <video src="https://github.com/heliocarlitos/portefolio_2/raw/main/videos/background.mp4" autoplay loop muted id="background-video"></video>
+    </div>
+
+    <!-- ABERTURA DO CABEÇALHO -->
+    <header class="header">
+
+        <!-- LOGO E TITULO DO SITE -->
+        <a href="https://heliocarlitos.github.io/portefolio_2/" class="logo_da_header"><img src="https://github.com/heliocarlitos/portefolio_2/blob/main/imagens/logo.png?raw=true" alt="logo">Último Recurso</a>
+
+        <!-- LOGOTIPO DO MENU (≡) -->
+        <div class="logo_menu" onclick="abrir_fechar_menu ()">
+            <span><i class='bx bx-menu'></i></span>
+        </div>
+        
+        <!-- LINKS DO MEDO E OS BOTÕES LOGIN & CRIAR CONTA -->
+         <nav  id="links_header" class="menu-fechado">
+            <div class="links_header">
+                <!-- LINKS -->
+                <ul>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/">Home</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/sobre.html">Sobre</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/contacto.html">Contacto</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/blog.html" class="link_activo">Blog</a></li>
+                    <li><a href="https://heliocarlitos.github.io/portefolio_2/paginas/servicos.html">Serviços</a></li>         
+                </ul>
+
+                <!-- BOTÕES -->
+                <div class="login_header">
+                    <a href="https://heliocarlitos.github.io/portefolio_2/paginas/login.html">Login</a>
+                    <a href="https://heliocarlitos.github.io/portefolio_2/paginas/criarconta.html">Criar conta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FECHAMENTO DO CABEÇALHO -->
+
+    <!-- DIV PARA IR AO TOP -->
+    <div id="top"></div>
+
+    <!-- CONTEÚDO DA PÁGINA DO BLOG -->
+    <div class="blog" onclick="fechar_menu ()">
+
+        <!-- PÁGINA 2 -->
+        <div class="blog_content ultimas_postagens">
+            <h1 class="destaques">Página 3</h1>
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_1.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_2.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+            
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_3.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_4.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_5.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+            
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_6.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_7.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+            
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_8.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_9.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+            
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_10.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_11.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+            
+            <a target="_blank" href="https://www.ultimorecursoh.com/" class="contentblog">
+                <img src="https://raw.githubusercontent.com/heliocarlitos/portefolio_2/109193f7216417676c09733332e1ec0a97bfb811/imagens/imagens_do_blog/ultimas_postagens_12.jpg" alt="Imagem">
+                <h4>Titulo</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quisquam alias fugit. Tempora optio voluptas itaque...</p>
+            </a>
+        </div>
+
+        <!-- BOTÕES DE VER MAIS ( 1 2 3 4) -->
+        <div class="btn_vermais">
+            <a href="/paginas/blog.html">1</a>
+            <a href="blog_pagina_2.html">2</a>
+            <a class="activo" href="blo_pagina_3.html">3</a>
+            <a href="blog_pagina_4.html">4</a>
+        </div>
+
+        <!-- BOTÃO / LINK DE IR AO TOPO -->
+        <a href="#top" class="iraotopo" title="Ir ao Topo">
+            <span><i class='bx bxs-chevron-up-circle'></i></span>
+        </a>
+
+    </div>
+    <!-- FIM DO CONTEÚDO DO BLOG -->
+    
+    <script src="/javascript/index.js"></script><!-- SCRIPT PARA ABRIR E FECHAR O MENU EM TELAS PEQUENAS -->
+    <script>
+        function abrir_fechar_menu() {
+    var menu = document.getElementById('links_header');
+
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+};
+    </script>
+</body>
+</html>
